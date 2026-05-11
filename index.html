@@ -9,41 +9,50 @@
         * {margin: 0; padding: 0; box-sizing: border-box;}
         body {
             font-family: 'Tajawal', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
         }
-    .card {
+   .card {
             background: white;
             border-radius: 25px;
-            padding: 40px 30px;
+            padding: 35px 25px;
             max-width: 500px;
             width: 100%;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             text-align: center;
         }
-    .title {
+   .title {
             font-size: 32px;
             font-weight: 900;
-            color: #667eea;
-            margin-bottom: 10px;
+            color: #0f766e;
+            margin-bottom: 5px;
         }
-    .doaa {
+   .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+   .doaa {
             font-size: 22px;
             line-height: 2;
             color: #333;
             font-weight: 700;
-            margin: 25px 0;
+            margin: 20px 0;
             padding: 25px;
-            background: #f8f9ff;
+            background: #f0fdfa;
             border-radius: 15px;
-            border-right: 5px solid #667eea;
+            border-right: 5px solid #0f766e;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-    .btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   .btn {
+            background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%);
             color: white;
             border: none;
             padding: 15px 40px;
@@ -52,44 +61,75 @@
             border-radius: 50px;
             cursor: pointer;
             font-family: 'Tajawal', sans-serif;
+            width: 100%;
         }
-    .subscribe-box {
-            background: #fff3cd;
-            border: 2px solid #ffc107;
-            border-radius: 15px;
-            padding: 20px;
-            margin-top: 25px;
+   .subscribe-box {
+            background: #fffbeb;
+            border: 2px solid #fbbf24;
+            border-radius: 20px;
+            padding: 25px 20px;
+            margin-top: 30px;
         }
-    .price {
-            font-size: 28px;
+   .features {
+            text-align: right;
+            margin: 15px 0;
+        }
+   .feature {
+            font-size: 15px;
+            margin: 8px 0;
+            color: #333;
+        }
+   .price {
+            font-size: 32px;
             font-weight: 900;
-            color: #ff6b00;
-            margin: 10px 0;
+            color: #ea580c;
+            margin: 15px 0 5px 0;
         }
-    .orange-cash {
+   .orange-cash {
             background: #ff6b00;
             color: white;
-            padding: 12px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-weight: 700;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: 900;
             margin: 15px 0;
             direction: ltr;
+        }
+   .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="card">
         <div class="title">🤲 دعاء اليوم</div>
-        <div class="doaa" id="doaa">اللهم إني أسألك من الخير كله</div>
+        <div class="subtitle">نسخة مجانية - 5 أدعية متاحة</div>
+        <div class="doaa" id="doaa">اللهم إني أسألك من الخير كله عاجله وآجله</div>
         <button class="btn" onclick="newDoaa()">دعاء جديد</button>
         
         <div class="subscribe-box">
-            <div style="font-weight:700; font-size:18px;">✨ اشترك الآن</div>
+            <div style="font-weight:900; font-size:22px; color:#92400e;">✨ العضوية المميزة</div>
+            <div class="features">
+                <div class="feature">✅ +50 دعاء حصري للمشتركين</div>
+                <div class="feature">✅ دعاء يومي باسم المتوفي</div>
+                <div class="feature">✅ إرسال دعاء يومي على واتساب</div>
+                <div class="feature">✅ بدون إعلانات نهائياً</div>
+            </div>
             <div class="price">100 جنيه / شهرياً</div>
-            <div style="color:#666;">للدفع أورانج كاش:</div>
+            <div style="color:#666; font-size:14px;">للدفع أورانج كاش:</div>
             <div class="orange-cash">01289590022</div>
-            <div style="font-size:14px;">حول المبلغ وارسل سكرين شوت واتساب</div>
+            <a href="https://wa.me/201289590022?text=عايز اشترك في دعاء اليوم الشهري" class="whatsapp-btn">
+                📱 اشترك عبر واتساب
+            </a>
+            <div style="font-size:12px; color:#666; margin-top:10px;">حول المبلغ وابعت سكرين شوت للتفعيل</div>
         </div>
     </div>
 
